@@ -24,7 +24,7 @@
           <rich:panel id="newMemberPanel" styleClass=".form" header="Member Registration" headerClass="header">
               <p>Enforces annotation-based constraints defined on the model class.</p>
 
-              <my:memberForm member="#{newMember}"/>
+              <my:memberForm id="memberForm" member="#{newMember}"/>
 
              <h:panelGrid columns="2">
                 <a4j:commandButton id="register" action="#{memberController.register}" value="Register"
