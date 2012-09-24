@@ -40,31 +40,31 @@
              <h:panelGroup rendered="#{empty members}">
                 <em>No registered members.</em>
              </h:panelGroup>
-             <rich:dataTable var="_member" value="#{members}" rendered="#{not empty members}" style="width : 100%">
-                   <rich:column>
+             <rich:dataTable id="memberTable" var="_member" value="#{members}" rendered="#{not empty members}" style="width : 100%">
+                   <rich:column id="view">
                       <a4j:commandLink styleClass="no-decor" render="memberPanel" execute="@this"
                                        oncomplete="#{rich:component('memberPopup')}.show()">
                          View
                          <f:setPropertyActionListener target="#{memberController.member}" value="#{_member}"/>
                       </a4j:commandLink>
                    </rich:column>
-                   <rich:column>
+                   <rich:column id="member_id">
                       <f:facet name="header">Id</f:facet>
                       #{_member.id}
                    </rich:column>
-                   <rich:column>
+                   <rich:column id="member_name">
                       <f:facet name="header">Name</f:facet>
                       #{_member.name}
                    </rich:column>
-                   <rich:column>
+                   <rich:column id="member_email">
                       <f:facet name="header">Email</f:facet>
                       #{_member.email}
                    </rich:column>
-                   <rich:column>
+                   <rich:column id="member_phone">
                       <f:facet name="header">Phone #</f:facet>
                       #{_member.phoneNumber}
                    </rich:column>
-                   <rich:column>
+                   <rich:column id="member_rest_url">
                       <f:facet name="header">REST URL</f:facet>
                       <a href="#{request.contextPath}/rest/members/#{_member.id}">/rest/members/#{_member.id}</a>
                    </rich:column>
