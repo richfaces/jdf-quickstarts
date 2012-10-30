@@ -62,6 +62,10 @@ public class MemberController {
         return member;
     }
 
+    public void setMember(Member member) {
+        this.member = member;
+    }
+
     @PostConstruct
     public void initNewMember() {
         newMember = new Member();
