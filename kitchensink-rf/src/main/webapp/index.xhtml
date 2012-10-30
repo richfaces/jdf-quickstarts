@@ -66,10 +66,10 @@
                    </rich:column>
                    <rich:column id="member_rest_url">
                       <f:facet name="header">REST URL</f:facet>
-                      <a href="#{request.contextPath}/rest/members/#{_member.id}">/rest/members/#{_member.id}</a>
+                      <a href="#{request.contextPath}/rest/members/#{_member.id}" target="_rest_member">/rest/members/#{_member.id}</a>
                    </rich:column>
                    <f:facet name="footer">
-                      REST URL for all members: <a href="#{request.contextPath}/rest/members">/rest/members</a>
+                      REST URL for all members: <a href="#{request.contextPath}/rest/members" target="_rest_all">/rest/members</a>
                    </f:facet>
                 </rich:dataTable>
           </rich:collapsiblePanel>
