@@ -42,10 +42,17 @@
                         <ui:include src="/mobile/home.xhtml"/>
                     </div>
                     <div id="app-page" class="page stage-right">
-                        <ui:include src="#{pageBean.page}"/>
+                        <ui:include src="#{pageBean.page}" />
                     </div>
                 </div>
+                
+                
             </h:form>
         </div>
+        
+        <a4j:push id="push" address="pushCdi" ondataavailable="showMessage(event.rf.data)">
+            <a4j:ajax event="dataavailable" render="mobileForm:membersPanel"/>
+        </a4j:push>
+
     </ui:define>
 </ui:composition>
