@@ -3,7 +3,7 @@ helloworld-rf: Helloworld with a JSF (JavaServer Faces) Front End
 Author: Brian Leathem
 Level: Beginner
 Technologies: CDI, JSF, RichFaces
-Summary: Similar to the helloworld quickstart, but with a JSF front end
+Summary: Similar to the helloworld quickstart, but with a JSF and RichFaces front end
 Target Product: WFK
 Source: <https://github.com/richfaces/as-quickstarts>
 
