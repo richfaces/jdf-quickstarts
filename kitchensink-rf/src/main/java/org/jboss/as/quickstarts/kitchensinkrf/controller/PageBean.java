@@ -16,9 +16,7 @@
  */
 package org.jboss.as.quickstarts.kitchensinkrf.controller;
 
-import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
-import javax.enterprise.inject.Model;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
