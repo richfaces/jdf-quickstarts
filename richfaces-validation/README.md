@@ -5,7 +5,7 @@ Level: Beginner
 Technologies: RichFaces
 Summary: Demonstrates RichFaces and bean validation
 Target Product: WFK
-Source: <https://github.com/jboss-jdf/jboss-as-quickstart/>
+Source: <https://github.com/richfaces/as-quickstarts>
 
 What is it?
 -----------
