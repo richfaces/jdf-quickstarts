@@ -23,7 +23,7 @@
     <artifactId>jboss-as-helloworld-rf</artifactId>
     <version>7.1.2-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>JBoss AS Quickstarts: Hello world with JSF front end</name>
+    <name>JBoss WFK Quickstart: helloworld-richfaces</name>
     <description>JBoss AS Quickstarts: Hello world JSF</description>
 
     <url>http://jboss.org/jbossas</url>
