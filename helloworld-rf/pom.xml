@@ -19,12 +19,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.jboss.as.quickstarts</groupId>
+    <groupId>org.jboss.quickstarts.wfk</groupId>
     <artifactId>jboss-as-helloworld-rf</artifactId>
-    <version>7.1.2-SNAPSHOT</version>
+    <version>2.4.0-redhat-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>JBoss WFK Quickstart: helloworld-richfaces</name>
-    <description>JBoss AS Quickstarts: Hello world JSF</description>
+    <name>JBoss WFK Quickstart: helloworld-rf</name>
+    <description>JBoss WFK Quickstarts: Hello world JSF</description>
 
     <url>http://jboss.org/jbossas</url>
     <licenses>
@@ -53,7 +53,7 @@
             maven repository. -->
         <!-- <version.jboss.spec.javaee.6.0>3.0.2.Final-redhat-3</version.jboss.spec.javaee.6.0> -->
 
-        <version.richfaces>4.3.1.Final</version.richfaces>
+        <version.richfaces>4.3.2.Final</version.richfaces>
 
         <!-- maven-compiler-plugin -->
         <maven.compiler.target>1.6</maven.compiler.target>
