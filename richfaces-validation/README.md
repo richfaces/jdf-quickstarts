@@ -69,13 +69,13 @@ _NOTE: The following build command assumes you have configured your Maven user s
 
         mvn clean package jboss-as:deploy
 
-4. This will deploy `target/jboss-as-richfaces-validation.war` to the running instance of the server.
+4. This will deploy `target/jboss-richfaces-validation.war` to the running instance of the server.
 
 
 Access the application 
 ---------------------
 
-The application will be running at the following URL: <http://localhost:8080/jboss-as-richfaces-validation/>.
+The application will be running at the following URL: <http://localhost:8080/jboss-richfaces-validation/>.
 
 You will be provided with form to enter member information. 
 
