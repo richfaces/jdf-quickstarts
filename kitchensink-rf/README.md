@@ -28,7 +28,7 @@ The kitchensink quickstart is built using Vanilla JSF for its front end.  With t
 
 *   Popups: Click the view link next to a member in the member list to view a popup with the member details.  To close the popup, click the "X" in the top right-hand corner, or click anywhere on the background mask.
 
-*   Mobile support: view the application form a webkit powered browser on a mobile device to try out the mobile version of the application.  Alternatively, view the mobile version on your desktop by navigating to the url: <http://localhost:8080/jboss-as-kitchensink-rf/mobile/>
+*   Mobile support: view the application form a webkit powered browser on a mobile device to try out the mobile version of the application.  Alternatively, view the mobile version on your desktop by navigating to the url: <http://localhost:8080/jboss-kitchensink-rf/mobile/>
 
 System requirements
 -------------------
@@ -65,13 +65,13 @@ _NOTE: The following build command assumes you have configured your Maven user s
 
         mvn clean package jboss-as:deploy
 
-4. This will deploy `target/jboss-as-kitchensink-rf.war` to the running instance of the server.
+4. This will deploy `target/jboss-kitchensink-rf.war` to the running instance of the server.
 
 
 Access the application
 ---------------------
 
-The application will be running at the following URL: <http://localhost:8080/jboss-as-kitchensink-rf/>.
+The application will be running at the following URL: <http://localhost:8080/jboss-kitchensink-rf/>.
 
 
 Undeploy the Archive

@@ -20,11 +20,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.quickstarts.wfk</groupId>
-    <artifactId>jboss-as-helloworld-rf</artifactId>
+    <artifactId>jboss-helloworld-rf</artifactId>
     <version>2.4.0-redhat-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>JBoss WFK Quickstart: helloworld-rf</name>
-    <description>JBoss WFK Quickstarts: Hello world JSF</description>
+    <description>JBoss WFK Quickstarts: Helloworld using RichFaces</description>
 
     <url>http://jboss.org/jbossas</url>
     <licenses>
