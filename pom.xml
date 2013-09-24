@@ -25,11 +25,11 @@
         <relativePath />
     </parent>
     <groupId>org.jboss.quickstarts.wfk</groupId>
-    <artifactId>jboss-as-quickstarts-parent</artifactId>
-    <version>2.4.0-redhat-SNAPSHOT</version>
+    <artifactId>jboss-richfaces-quickstarts-parent</artifactId>
+    <version>2.4.0-build-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>JBoss Quickstart: Parent</name>
-    <description>JBoss AS Quickstarts Parent</description>
+    <name>JBoss WFK Quickstart: richfaces-quickstarts-parent</name>
+    <description>JBoss Richfaces Quickstarts Parent</description>
     <url>http://www.jboss.org/jdf/quickstarts/get-started/</url>
 
     <licenses>
@@ -45,22 +45,13 @@
 
         <!-- JBoss dependency versions -->
 
-        <version.jboss.as>7.2.0.Final</version.jboss.as>
-        <!-- Alternatively, comment out the above line, and un-comment the
-            line below to use version 7.2.0.Final-redhat-8 which is a release certified
-            to work with JBoss EAP 6. It requires you have access to the JBoss EAP 6
-            maven repository. -->
-        <!-- <version.jboss.as>7.2.0.Final-redhat-8</version.jboss.as> -->
+        <version.jboss.as>7.2.1.Final</version.jboss.as>
 
         <version.jboss.maven.plugin>7.4.Final</version.jboss.maven.plugin>
 
         <!-- Define the version of the JBoss BOMs we want to import to specify tested stacks. -->
-        <version.jboss.bom>1.0.7.Final</version.jboss.bom>
-        <!-- Alternatively, comment out the above line, and un-comment the
-            line below to use version 1.0.4.Final-redhat-4 which is a release certified
-            to work with JBoss EAP 6. It requires you have access to the JBoss EAP 6
-            maven repository. -->
-        <!-- <version.jboss.bom>1.0.4.Final-redhat-4</version.jboss.bom> -->
+        <version.jboss.bom.eap>1.0.7.Final</version.jboss.bom.eap>
+        <version.jboss.bom.wfk>1.0.7.Final</version.jboss.bom.wfk>
 
         <version.jboss.spec.javaee.6.0>3.0.2.Final</version.jboss.spec.javaee.6.0>
         <!-- Alternatively, comment out the above line, and un-comment the
