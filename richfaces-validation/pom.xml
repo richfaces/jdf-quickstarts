@@ -52,7 +52,7 @@
             maven repository. -->
         <!-- <version.jboss.bom.eap>1.0.4.Final-redhat-4</version.jboss.bom.eap> -->
 
-        <version.richfaces>4.3.2.Final</version.richfaces>
+        <version.richfaces>4.3.4.Final</version.richfaces>
 
         <!-- other plugin versions -->
         <version.surefire.plugin>2.10</version.surefire.plugin>

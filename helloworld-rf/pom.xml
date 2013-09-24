@@ -53,7 +53,7 @@
             maven repository. -->
         <!-- <version.jboss.spec.javaee.6.0>3.0.2.Final-redhat-3</version.jboss.spec.javaee.6.0> -->
 
-        <version.richfaces>4.3.2.Final</version.richfaces>
+        <version.richfaces>4.3.4.Final</version.richfaces>
 
         <!-- maven-compiler-plugin -->
         <maven.compiler.target>1.6</maven.compiler.target>
