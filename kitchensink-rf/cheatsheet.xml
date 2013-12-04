@@ -15,10 +15,10 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<cheatsheet title="CDI + JSF + EJB + JTA + Bean Validation + JAX-RS + Arquillian: Kitchensink quickstart">
+<cheatsheet title="RichFaces: Kitchensink quickstart">
   <intro>
     <description>
-This quickstart shows off all the new features of Java EE 6, and makes a great starting point for your project.
+This quickstart shows off all the new features of Java EE 6, and how to use them with a RichFaces front-end.  It makes a great starting point for your project.
 <br/><br/>
 <b>Bean Validation</b>
 <br/><br/>
