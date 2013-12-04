@@ -94,48 +94,43 @@ This template lives in <b>WEB-INF/templates/default.xhtml</b>:
   </item>
 
   <item
-      title="index.xhtml">
+      title="index.xhtml (Main Page)">
       <description>
-      That leaves the main page, index.xhtml, in which we place the content unique to the main page:
+      The index.xhtml page places the content unique to the main page:
       </description>
       <subitem
             label="The JSF form allows us to register new users. There should be one already created when the application started."
             skip="true">
         <command
       required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=33,toLine=62)"/>
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=39,toLine=112)"/>
     </subitem>
-    <subitem
-            label="The application uses Bean Validation to validate data entry. The error messages from Bean Validation are automatically attached to the relevant field by JSF, and adding a messages JSF component will display them."
-            skip="true">
-      </subitem>
       <subitem
-            label="Name validation">
-    <command
-      required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=39,toLine=40)"/>
-    </subitem>
-    <subitem
-            label="Email validation"
+            label="The form logic is encapsulated in a JSF composite component, which we will take a look at next."
             skip="true">
-    <command
-      required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=43,toLine=44)"/>
-    </subitem>
-    <subitem
-            label="Phone number validation"
-            skip="true">
-    <command
-      required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=47,toLine=49)"/>
-    </subitem>
+         <command
+               required="false"
+               serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=43,toLine=43)"/>
+      </subitem>
     <subitem
             label="This application exposes REST endpoints for each registered member. The application helpfully displays the URL to the REST endpoint on this page. "
             skip="true">
     <command
       required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=86,toLine=90)"/>
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=87,toLine=89)"/>
     </subitem>
+      <subitem
+            label="A RichFaces popup for a details view">
+         <command
+               required="false"
+               serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=93,toLine=106)"/>
+      </subitem>
+      <subitem
+            label="RichFaces push triggers an ajax refresh on server-side events.">
+         <command
+               required="false"
+               serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=108,toLine=110)"/>
+      </subitem>
 
   </item>
   
