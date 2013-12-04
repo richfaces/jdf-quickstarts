@@ -148,13 +148,15 @@
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=87,toLine=89)"/>
         </subitem>
         <subitem
-            label="A RichFaces popup for a details view">
+            label="A RichFaces popup for a details view"
+            skip="true">
             <command
                 required="false"
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=93,toLine=106)"/>
         </subitem>
         <subitem
-            label="RichFaces push triggers an ajax refresh on server-side events.">
+            label="RichFaces push triggers an ajax refresh on server-side events."
+            skip="true">
             <command
                 required="false"
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/index.xhtml,fromLine=108,toLine=110)"/>
@@ -173,13 +175,15 @@
             skip="true">
         </subitem>
         <subitem
-            label="Name validation">
+            label="Name validation"
+            skip="true">
             <command
                 required="false"
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=34,toLine=38)"/>
         </subitem>
         <subitem
-            label="Client-side Bean Validation with the rich:validator tag">
+            label="Client-side Bean Validation with the rich:validator tag"
+            skip="true">
             <command
                 required="false"
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=36,toLine=36)"/>
