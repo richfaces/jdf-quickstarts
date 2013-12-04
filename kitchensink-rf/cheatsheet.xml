@@ -135,6 +135,44 @@ This template lives in <b>WEB-INF/templates/default.xhtml</b>:
   </item>
   
   <item
+        title="memberForm.xhtml (Composite Component)">
+     <description>
+        The memberForm.xhtml composite component encapsulates the form elements into a single JSF component that can be re-used throughout the application.
+     </description>
+    <subitem
+            label="The application uses Bean Validation to validate data entry. The error messages from Bean Validation are automatically attached to the relevant field by JSF, and adding a messages JSF component will display them."
+            skip="true">
+      </subitem>
+      <subitem
+            label="Name validation">
+    <command
+      required="false"
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=34,toLine=38)"/>
+    </subitem>
+    <subitem
+            label="Client-side Bean Validation with the rich:validator tag">
+    <command
+      required="false"
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=36,toLine=36)"/>
+    </subitem>
+    
+    <subitem
+            label="Email validation"
+            skip="true">
+    <command
+      required="false"
+serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=40,toLine=44)"/>
+    </subitem>
+    <subitem
+            label="Phone number validation"
+            skip="true">
+    <command
+      required="false"
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=46,toLine=50)"/>
+    </subitem>
+  </item>
+  
+  <item
         skip="true"
         title="Member.java">
      <description>
