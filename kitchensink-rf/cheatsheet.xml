@@ -57,9 +57,11 @@ We discussed both of these files in detail in The <b>greeter example in depth</b
   </item>
   
    <item
-         title="default.xhtml">
+         title="default.xhtml (JSF Template)">
       <description>
-      Next, let&apos;s take a look at the JSF view the user sees. As usual, we use a template to provide the sidebar and footer. This one lives in <b>WEB-INF/templates/default.xhtml</b>:
+      Next, let&apos;s take a look at the JSF view the user sees. As usual, we use a JSF template to layout the content, sidebar and footer. 
+<br/><br/>
+This template lives in <b>WEB-INF/templates/default.xhtml</b>:
       </description>
       <subitem
             label="We have a common &lt;head&gt; element, where we define styles and more. "
@@ -73,14 +75,14 @@ We discussed both of these files in detail in The <b>greeter example in depth</b
             skip="true">
     <command
       required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/default.xhtml,fromLine=37,toLine=52)"/>
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/default.xhtml,fromLine=37,toLine=39)"/>
     </subitem>
     <subitem
             label="and a common footer... "
             skip="true">
         <command
       required="false"
-      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/default.xhtml,fromLine=53,toLine=58)"/>
+      serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/default.xhtml,fromLine=40,toLine=44)"/>
     </subitem>
     <subitem
             label="The content is inserted here, and defined by views using this template. "
@@ -89,9 +91,8 @@ We discussed both of these files in detail in The <b>greeter example in depth</b
       required="false"
       serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/default.xhtml,fromLine=32,toLine=36)"/>
        </subitem>
-
   </item>
-  
+
   <item
       title="index.xhtml">
       <description>
