@@ -33,13 +33,17 @@ JAX-RS is a new specification in Java EE 6. It allows application developers to 
         skip="false"
         title="The kitchensink example in depth">
      <description>
-       The kitchensink application shows off a number of Java EE technologies such as CDI, JSF, EJB, JTA, JAX-RS and Arquillian. 
+       The kitchensink-rf application shows off a number of Java EE technologies such as CDI, JSF, EJB, JTA, JAX-RS and Arquillian.
        It does this by providing a member registration database, available via JSF and JAX-RS.
+       The JSF front-end use RichFaces components for improved usability, and a mobile view is available using the RichFaces 4 mobile compatible components.
 <br/><br/>
 As usual, let&apos;s start by looking at the necessary deployment descriptors. 
 By now, we're very used to seeing <b>beans.xml</b> and <b>faces-config.xml</b> in <b>WEB-INF/</b> 
 (which can be found in the <b>src/main/webapp</b> directory of the example). 
-Notice that, once again, we don&apos;t need a web.xml. 
+Notice however, that we have now introduced a web.xml.  The web.xml file is the primary file used for configuring
+the RichFaces framework.  In this quickstart we are using the web.xml file to enable resource optimisation.
+More on this later.
+<br/><br/>
 There are two configuration files in <b>WEB-INF/classes/META-INF</b> 
 (which can be found in the <b>src/main/resources</b> directory of the example) — <b>persistence.xml</b>, 
 which sets up JPA, and <b>import.sql</b> which Hibernate, the JPA provider in JBoss AS 7, 
