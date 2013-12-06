@@ -561,6 +561,22 @@
 
     <item
         skip="true"
+        title="PageBean.java">
+        <description>
+            The PageBean maps the location hash from the url in the browser into a jsf view-id.  This view-id will be
+            used by the ui:include tag in the mobile index to load the page content.
+        </description>
+        <subitem
+            label="In this case the mapping from the location hash to a jsf view-id is a simple 1-1 mapping with the xhtml suffix appended. "
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/PageBean.java,fromLine=50)"/>
+        </subitem>
+    </item>
+
+    <item
+        skip="true"
         title="JAX-RS">
         <description>
             Before we wrap up our tour of the kitchensink example application,
