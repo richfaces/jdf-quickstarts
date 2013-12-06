@@ -508,39 +508,53 @@
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=40)"/>
         </subitem>
         <subitem
+            label="The RichFaces push topic is injected.  The push topic is used to trigger an update of the client browsers in response to an event on the server."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=47,toLine=49)"/>
+        </subitem>
+        <subitem
             label="The Member class is exposed using a named producer field, which allows access from JSF. Note that the named producer field has dependent scope, so every time it is injected, the field will be read "
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=43,toLine=45)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=54,toLine=58)"/>
         </subitem>
         <subitem
             label="The @PostConstruct annotation causes a new member object to be placed in the newMember field when the bean is instantiated."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=47)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=70)"/>
         </subitem>
         <subitem
             label="When the register method is called, the newMember object is passed to the persistence service."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=54)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=75)"/>
         </subitem>
         <subitem
             label="We also send a message to the user, to give them feedback on their actions."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=56)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=78)"/>
+        </subitem>
+        <subitem
+            label="And push a notification down to the client using the RichFaces push component."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=80)"/>
         </subitem>
         <subitem
             label="Finally, we replace the newMember with a new object, thus blanking out the data the user has added so far. This works as the producer field is dependent scoped."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=57)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java,fromLine=81)"/>
         </subitem>
 
     </item>
