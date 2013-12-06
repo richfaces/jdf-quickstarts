@@ -481,6 +481,24 @@
 
     <item
         skip="true"
+        title="UAGentInfo.java">
+        <description>
+            The UAgent info class parses the user-agent string retrieved from the browser request to identify the client
+            browser.  This is used to re-direct mobile browsers to the mobile index page.
+        </description>
+    </item>
+
+    <item
+        skip="true"
+        title="UserAgent.java">
+        <description>
+            The UserAgent class is a CDI bean wrapping the UAgetnInfo class.  It provides a simplified API we can query
+            from EL in our JSF pages.
+        </description>
+    </item>
+
+    <item
+        skip="true"
         title="MemberController.java">
         <description>
             Of course, we need to allow JSF to interact with the services. The MemberController class is responsible for
