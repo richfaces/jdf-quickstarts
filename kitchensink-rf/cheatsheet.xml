@@ -486,6 +486,9 @@
             The UAgent info class parses the user-agent string retrieved from the browser request to identify the client
             browser.  This is used to re-direct mobile browsers to the mobile index page.
         </description>
+        <command
+            required="false"
+            serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/util/UAgentInfo.java,fromLine=76)"/>
     </item>
 
     <item
@@ -495,6 +498,25 @@
             The UserAgent class is a CDI bean wrapping the UAgetnInfo class.  It provides a simplified API we can query
             from EL in our JSF pages.
         </description>
+        <command
+            required="false"
+            serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/util/UserAgent.java,fromLine=33)"/>
+    </item>
+
+    <item
+        skip="true"
+        title="RewriteConfigurationProvider.java">
+        <description>
+            The configuration file for the url rewriting library used to redirect mobile requests to the mobile index
+            page.
+        </description>
+        <subitem
+            label="The rewrite fluent API leverages the UAgentInfo class to detect requests from mobile browsers and redirects the mobile index page."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/util/RewriteConfigurationProvider.java,fromLine=57,toLine=63)"/>
+        </subitem>
     </item>
 
     <item
@@ -509,21 +531,21 @@
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=34)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=36)"/>
         </subitem>
         <subitem
             label="The FacesContext is injected, so that messages can be sent to the user."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=37)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=41)"/>
         </subitem>
         <subitem
             label="The MemberRegistration bean is injected, to allow the controller to interact with the database."
             skip="true">
             <command
                 required="false"
-                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=40)"/>
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/controller/MemberController.java,fromLine=44)"/>
         </subitem>
         <subitem
             label="The RichFaces push topic is injected.  The push topic is used to trigger an update of the client browsers in response to an event on the server."
