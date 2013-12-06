@@ -83,7 +83,7 @@
     </item>
 
     <item
-        title="default.xhtml (JSF Template)">
+        title="templates/default.xhtml (Desktop JSF Template)">
         <description>
             Next, let&apos;s take a look at the JSF view the user sees. As usual, we use a JSF template to layout the
             content, sidebar and footer.
@@ -202,6 +202,84 @@
             <command
                 required="false"
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/resources/components/memberForm.xhtml,fromLine=46,toLine=50)"/>
+        </subitem>
+    </item>
+
+    <item
+        title="templates/mobile.xhtml (Mobile JSF Template)">
+        <description>
+            The mobile/index.xhtml page is served using URL a rewriting technique when the user-agent in the request
+            header indicates the client is using a mobile web browser.  We'll see both the URL rewriting configuration
+            and the user-agent detection later.
+            <br/>
+            <br/>
+            This template lives in<b>WEB-INF/templates/mobile.xhtml</b>:
+        </description>
+        <subitem
+            label="Setting various meta-tags allows us to configure the display of the browser on mobile devices.  Here we define the height and width of the viewport, the initial scale of the page, and the target screen density. This allows the application to resize when rotated to landscape or portrait mode and zooms the content appropriately."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/mobile.xhtml,fromLine=25,toLine=29)"/>
+        </subitem>
+        <subitem
+            label="Load and initialize the slidfast mobile resources to enable us to write a single-page application with JSF/RichFaces."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/mobile.xhtml,fromLine=30,toLine=40)"/>
+        </subitem>
+        <subitem
+            label="Load and initialize the richfaces mobile skin to enable mobile compatibility of our JSF/RichFaces application."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/mobile.xhtml,fromLine=44,toLine=45)"/>
+        </subitem>
+        <subitem
+            label="The content placeholder for our mobile pages."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/WEB-INF/templates/mobile.xhtml,fromLine=50,toLine=50)"/>
+        </subitem>
+    </item>
+
+    <item
+        skip="true"
+        title="mobile/index.xhtml (Mobile index page)">
+        <description>
+            To achieve the expected level of performance with our JSF/RichFaces application on mobile devices we will
+            pursue a single page application model.  This index page will dynamically load content via ajax calls, and
+            use the slidfast library to slide content in and out of the screen.
+        </description>
+        <subitem
+            label="As usual with JPA, we define that the class is an entity by adding @Entity"
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/mobile/index.xhtml,fromLine=24,toLine=25)"/>
+        </subitem>
+        <subitem
+            label="The javascript executed after an ajax render to slide the old content out and the new content into the page."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/mobile/index.xhtml,fromLine=38,toLine=54)"/>
+        </subitem>
+        <subitem
+            label="The div with id page-container will hold the home-page and teh app-ape div elements.  The app-page div element is will contain the page contain, included by a dynamic ui:include tag."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/mobile/index.xhtml,fromLine=56,toLine=63)"/>
+        </subitem>
+        <subitem
+            label="An a4j:push component updates the page content when new data is added on the server."
+            skip="true">
+            <command
+                required="false"
+                serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/webapp/mobile/index.xhtml,fromLine=67,toLine=69)"/>
         </subitem>
     </item>
 
