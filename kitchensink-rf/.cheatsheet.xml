@@ -71,7 +71,7 @@
             directory of the example) —<b>persistence.xml</b>,
             which sets up JPA, and
             <b>import.sql</b>
-            which Hibernate, the JPA provider in JBoss AS 7,
+            which Hibernate, the JPA provider in JBoss EAP,
             will use to load the initial users into the application when the application starts.
             We discussed both of these files in detail in The<b>greeter example in depth</b>, and these are largely the
             same.
@@ -687,7 +687,7 @@
                 serialization="org.jboss.tools.project.examples.cheatsheet.openFileInEditor(path=/${currentProject}/src/main/java/org/jboss/as/quickstarts/kitchensinkrf/rest/MemberResourceRESTService.java,fromLine=65)"/>
         </subitem>
         <subitem
-            label="The listAllMembers() method is called when the raw endpoint is accessed and offers up a list of endpoints. Notice that the object is automatically marshalled to JSON by RESTEasy (the JAX-RS implementation included in JBoss Enterprise Application Platform 6 and JBoss AS 7)."
+            label="The listAllMembers() method is called when the raw endpoint is accessed and offers up a list of endpoints. Notice that the object is automatically marshalled to JSON by RESTEasy (the JAX-RS implementation included in JBoss Enterprise Application Platform 6)."
             skip="true">
             <command
                 required="false"
@@ -760,7 +760,7 @@
             <br/>
             <br/>
             Arquillian provides all the boiler plate for running your test inside JBoss Enterprise Application Platform
-            6 or JBoss AS 7,
+            6,
             allowing you to concentrate on testing your application.
             In order to do that, it utilizes Shrinkwrap, a fluent API for defining packaging,
             to create an archive to deploy.

@@ -1,11 +1,12 @@
 helloworld-rf: Helloworld with a JSF (JavaServer Faces) Front End
 ==================================================================
-Author: Brian Leathem
-Level: Beginner
-Technologies: CDI, JSF, RichFaces
-Summary: Similar to the helloworld quickstart, but with a JSF and RichFaces front end
-Target Product: WFK
-Source: <https://github.com/richfaces/as-quickstarts>
+Author: Brian Leathem  
+Level: Beginner  
+Technologies: CDI, JSF, RichFaces  
+Summary: Similar to the helloworld quickstart, but with a JSF and RichFaces front end  
+Target Product: WFK  
+Product Versions: EAP 6.1, EAP 6.2, WFK 2.4  
+Source: <https://github.com/richfaces/jdf-quickstarts>  
 
 What is it?
 -----------
@@ -20,7 +21,7 @@ System requirements
 
 All you need to build this project is Java 6.0 (Java SDK 1.6) or better, Maven 3.0 or better.
 
-The application this project produces is designed to be run on JBoss Enterprise Application Platform 6 or JBoss AS 7.
+The application this project produces is designed to be run on Red Hat JBoss Enterprise Application Platform (EAP) 6.1 or later.
 
 
 Configure Maven
@@ -29,11 +30,11 @@ Configure Maven
 If you have not yet done so, you must [Configure Maven](../README.md#configure-maven) before testing the quickstarts.
 
 
-Start JBoss Enterprise Application Platform 6 or JBoss AS 7 with the Web Profile
+Start the JBoss Server
 -------------------------
 
 1. Open a command line and navigate to the root of the JBoss server directory.
-2. The following shows the command line to start the server with the web profile:
+2. The following shows the command line to start the server with the default profile:
 
         For Linux:   JBOSS_HOME/bin/standalone.sh
         For Windows: JBOSS_HOME\bin\standalone.bat

@@ -45,8 +45,6 @@
 
         <!-- JBoss dependency versions -->
 
-        <version.jboss.as>7.2.1.Final</version.jboss.as>
-
         <version.jboss.maven.plugin>7.4.Final</version.jboss.maven.plugin>
 
         <!-- Define the version of the JBoss BOMs we want to import to specify tested stacks. -->
@@ -54,11 +52,6 @@
         <version.jboss.bom.wfk>1.0.7.Final</version.jboss.bom.wfk>
 
         <version.jboss.spec.javaee.6.0>3.0.2.Final</version.jboss.spec.javaee.6.0>
-        <!-- Alternatively, comment out the above line, and un-comment the
-            line below to use version 3.0.2.Final-redhat-3 which is a release certified
-            to work with JBoss EAP 6. It requires you have access to the JBoss EAP 6
-            maven repository. -->
-        <!-- <version.jboss.spec.javaee.6.0>3.0.2.Final-redhat-3</version.jboss.spec.javaee.6.0> -->
 
         <version.richfaces>4.3.4.Final</version.richfaces>
 
