@@ -1,12 +1,12 @@
 kitchensink-rf: Example Using Multiple Java EE 6 Technologies with RichFaces
 ========================
-Author: Pete Muir, Brian Leathem  
-Level: Intermediate  
-Technologies: CDI, JSF, JPA, EJB, JPA, JAX-RS, BV, RichFaces  
-Summary: The canonical JSF kitchensink quickstart implemented with JSF and RichFaces  
-Target Product: WFK  
-Product Versions: EAP 6.1, EAP 6.2, WFK 2.4  
-Source: <https://github.com/richfaces/jdf-quickstarts>  
+Author: Pete Muir, Brian Leathem
+Level: Intermediate
+Technologies: CDI, JSF, JPA, EJB, JPA, JAX-RS, BV, RichFaces
+Summary: The canonical JSF kitchensink quickstart implemented with JSF and RichFaces
+Target Product: WFK
+Product Versions: EAP 6.1, EAP 6.2, WFK 2.4
+Source: <https://github.com/richfaces/jdf-quickstarts>
 
 What is it?
 -----------
