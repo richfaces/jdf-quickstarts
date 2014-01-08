@@ -61,7 +61,6 @@
         <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
 
-
     <dependencyManagement>
         <dependencies>
             <!-- JBoss distributes a complete set of Java EE 6 APIs including
