@@ -53,7 +53,7 @@
 
         <version.jboss.spec.javaee.6.0>3.0.2.Final</version.jboss.spec.javaee.6.0>
 
-        <version.richfaces>4.3.4.Final</version.richfaces>
+        <version.richfaces>4.3.5.Final</version.richfaces>
 
         <!-- other plugin versions -->
         <version.surefire.plugin>2.10</version.surefire.plugin>
