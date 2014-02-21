@@ -1,14 +1,14 @@
 Red Hat JBoss Enterprise Application Platform (EAP) RichFaces Quickstarts
 ====================
 Target Product: WFK
-Product Versions: EAP 6.1, EAP 6.2, WFK 2.4  
+Product Versions: EAP 6.1, EAP 6.2, WFK 2.5  
 
 Summary: The quickstarts demonstrate Java EE 6, RichFaces 4.1, and a few additional technologies from the JBoss stack. They provide small, specific, working examples that can be used as a reference for your own project.
 
 Introduction
 ------------
 
-These quickstarts run on Red Hat JBoss Enterprise Application Platform 6.1 and WFK 2.4 or later. We recommend using the JBoss EAP ZIP file. This version uses the correct dependencies and ensures you test and compile against your runtime environment. 
+These quickstarts run on Red Hat JBoss Enterprise Application Platform 6.2 and WFK 2.5 or later. We recommend using the JBoss EAP ZIP file. This version uses the correct dependencies and ensures you test and compile against your runtime environment. 
 
 Available Quickstarts
 ---------------------
