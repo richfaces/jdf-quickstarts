@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     JBoss, Home of Professional Open Source
-    Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual
+    Copyright 2014, Red Hat, Inc. and/or its affiliates, and individual
     contributors by the @authors tag. See the copyright.txt in the
     distribution for a full listing of individual contributors.
 
@@ -15,20 +15,19 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
         <version>8</version>
-        <relativePath />
+        <relativePath/>
     </parent>
     <groupId>org.jboss.quickstarts.wfk</groupId>
-    <artifactId>jboss-richfaces-quickstarts-parent</artifactId>
-    <version>2.4.0-build-SNAPSHOT</version>
+    <artifactId>jboss-quickstart-parent</artifactId>
+    <version>2.5.0-build-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>JBoss WFK Quickstart: richfaces-quickstarts-parent</name>
+    <name>JBoss WFK Quickstart: richfaces-quickstarts</name>
     <description>JBoss Richfaces Quickstarts Parent</description>
     <url>http://www.jboss.org/jdf/quickstarts/get-started/</url>
 
@@ -78,46 +77,6 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.mycila</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>${version.com.mycyla.license}</version>
-                <configuration>
-                    <header>${basedir}/dist/license.txt</header>
-                    <aggregate>true</aggregate>
-                    <strictCheck>true</strictCheck>
-                    <excludes>
-                        <exclude>target/**</exclude>
-                        <exclude>.clover/**</exclude>
-                        <exclude>**/*.sql</exclude>
-                        <exclude>**/LICENSE*</exclude>
-                        <exclude>>**/license*</exclude>
-                        <!-- Exclude submodules -->
-                        <exclude>jdg-quickstarts/**</exclude>
-                        <exclude>jpp-quickstarts/**</exclude>
-                        <exclude>picketlink-quickstarts/**</exclude>
-                        <exclude>richfaces-quickstarts/**</exclude>
-                        <!-- Exclude specific Quickstarts -->
-                        <exclude>petclinic-spring/**</exclude>
-                        <!-- Javascrip Libraries -->
-                        <exclude>**/jquery*</exclude>
-                        <exclude>**/angular*</exclude>
-                        <exclude>**/qunit*</exclude>
-                        <exclude>**/backbone*</exclude>
-                        <exclude>**/lodash*</exclude>
-                        <exclude>**/modernizr*</exclude>
-                        <exclude>**/yepnope*</exclude>
-                        <exclude>**/mobile-nav*</exclude>
-                        <!--Other libraries -->
-                        <exclude>**/*glyphicons*/**</exclude>
-                        <exclude>**/*cordova*/**</exclude>
-                    </excludes>
-                    <encoding>UTF-8</encoding>
-                    <headerDefinitions>
-                        <headerDefinition>dist/headerdefinition.xml</headerDefinition>
-                    </headerDefinitions>
-                </configuration>
-              </plugin>
         </plugins>
     </build>
 
