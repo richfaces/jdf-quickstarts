@@ -97,7 +97,7 @@ public class RESTTest {
         String responseBody = EntityUtils.toString(response.getEntity());
         JSONArray members = new JSONArray(responseBody);
 
-        Assert.assertEquals(1, members.length());
+        Assert.assertEquals(2, members.length());
 
         Assert.assertEquals(1, members.getJSONObject(0).getInt("id"));
         Assert.assertEquals(NEW_MEMBER_NAME, members.getJSONObject(0).getString("name"));
