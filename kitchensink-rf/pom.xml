@@ -49,7 +49,8 @@
         <version.jboss.bom.eap>1.0.7.Final</version.jboss.bom.eap>
         <version.jboss.bom.wfk>1.0.7.Final</version.jboss.bom.wfk>
  
-        <version.richfaces>4.3.5.Final</version.richfaces>
+        <version.richfaces>4.5.0-SNAPSHOT</version.richfaces>
+        <version.rewrite>2.0.12.Final</version.rewrite>
 
         <!-- other plugin versions -->
         <version.surefire.plugin>2.10</version.surefire.plugin>
@@ -81,15 +82,6 @@
                 <groupId>org.jboss.bom</groupId>
                 <artifactId>jboss-javaee-6.0-with-hibernate</artifactId>
                 <version>${version.jboss.bom.eap}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Similarly to the JBoss Java EE 6 BOM above, the RichFaces BOM specifies the
-                versions of artifacts required for using RichFaces in your project. -->
-            <dependency>
-                <groupId>org.richfaces</groupId>
-                <artifactId>richfaces-bom</artifactId>
-                <version>${version.richfaces}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -166,27 +158,19 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Import the RichFaces core library -->
+        <!-- Import the RichFaces library -->
         <dependency>
-            <groupId>org.richfaces.core</groupId>
-            <artifactId>richfaces-core-impl</artifactId>
-        </dependency>
-        <!-- Import the RichFaces components -->
-        <dependency>
-            <groupId>org.richfaces.ui</groupId>
-            <artifactId>richfaces-components-ui</artifactId>
+            <groupId>org.richfaces</groupId>
+            <artifactId>richfaces</artifactId>
+            <version>${version.richfaces}</version>
         </dependency>
 
-        <!-- Import the Atmosphere framework for a4j:push -->
+        <!-- Import the RichFaces push dependencies -->
         <dependency>
-            <groupId>org.atmosphere</groupId>
-            <artifactId>atmosphere-runtime</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>org.richfaces</groupId>
+            <artifactId>richfaces-push-depchain</artifactId>
+            <type>pom</type>
+            <version>${version.richfaces}</version>
         </dependency>
 
         <!-- Now we declare any tools needed -->
@@ -203,12 +187,14 @@
         <dependency>
             <groupId>org.ocpsoft.rewrite</groupId>
             <artifactId>rewrite-servlet</artifactId>
+            <version>${version.rewrite}</version>
         </dependency>
 
         <!-- The cdi integration allows for CDI injection into the rewrite configuration class -->
         <dependency>
             <groupId>org.ocpsoft.rewrite</groupId>
             <artifactId>rewrite-integration-cdi</artifactId>
+            <version>${version.rewrite}</version>
         </dependency>
 
         <!-- Annotation processor that raising compilation errors whenever

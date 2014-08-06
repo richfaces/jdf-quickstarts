@@ -50,7 +50,7 @@ public class RewriteConfigurationProvider extends HttpConfigurationProvider {
      */
     @Override
     public Configuration getConfiguration(final ServletContext context) {
-        return ConfigurationBuilder.begin().defineRule()
+        return ConfigurationBuilder.begin().addRule()
                 .when(Direction.isInbound().and(Path.matches("/").or(Path.matches("/index.jsf"))).and(new HttpCondition() {
                     @Override
                     public boolean evaluateHttp(HttpServletRewrite httpServletRewrite, EvaluationContext evaluationContext) {
