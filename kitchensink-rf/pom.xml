@@ -49,7 +49,7 @@
         <version.jboss.bom.eap>1.0.7.Final</version.jboss.bom.eap>
         <version.jboss.bom.wfk>1.0.7.Final</version.jboss.bom.wfk>
  
-        <version.richfaces>4.5.0-SNAPSHOT</version.richfaces>
+        <version.richfaces>4.5.0.Final</version.richfaces>
         <version.rewrite>2.0.12.Final</version.rewrite>
 
         <!-- other plugin versions -->
